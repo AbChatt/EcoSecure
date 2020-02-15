@@ -23,23 +23,31 @@ body {
 }
 
 .intro1 {
-
+  padding-left: 16px;	
+  background-color:#C7D3EA;
+  border-bottom: 1px solid;
+  border-color: #D1D1D1;
+   
 }
 
 .intro2 {
-  background-color:#f5f5f5;
+  padding-left: 16px;		
+  background-color: white;
 }
 
 .intro3 {
-	
+  padding-left: 16px;	
+  background-color:#D3D4D5
 }
 
 .intro4 {
-	background-color:#f5f5f5;
+  padding-left: 16px;	
+  background-color: #e6edf3;
 }
 
 .comment {
-
+  padding-left: 16px;	
+  background-color:#112850;
 }
 
 .Footer {
@@ -64,7 +72,7 @@ body {
   color: white;
 }
 
-ul {
+.ulo {
   list-style: none;
   padding-left: 0px;
 }
@@ -99,5 +107,45 @@ ul {
 h1 {
   color: white;
   font-size: 40px;
-  padding: 0px 16px 20px 16px;
+  padding: 0px 0px 5px 16px;
+}
+
+ul {
+  font-size: 16px;
+  font-family: sans-serif;
+  color:#4C4D4F;
+}
+
+.SmallGrey {
+  font-size: 16px;
+  font-family: sans-serif;
+  color:#4C4D4F;
+}
+
+.SmallBlue {
+  color:#112850;
+  font-size:30px; 
+}
+
+.BigBlue {
+  color:#112850;
+  font-style:bold;
+}
+
+.CenterBigBlue {
+  color:#112850;
+  font-style:bold;
+  text-align: center;
+}
+
+.ctxt {
+  color:white;
+  font-family: serif;
+  font-size: 20px;
+}
+
+.cname {
+  color:#569AEF;
+  font-family: sans-serif;
+  font-size: 30px;
 }
