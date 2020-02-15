@@ -10,52 +10,49 @@ import face_recognition
 
 cap = cv2.VideoCapture(0)
 
-# url = "http://100.80.129.11:8080/shot.jpg"          # specific to IP address, port 8080
+#url = "http://100.80.129.11:8080/shot.jpg"          # specific to IP address, port 8080
 
-encoding_lst = []
+known_encoding_lst = []
 label_lst = []
+unknown_encoding_lst = []
+unknown_labels_lst = []
 
 known_image1 = face_recognition.load_image_file("image1.jpg")
 known_encoding1 = face_recognition.face_encodings(known_image1)[0]
 
-encoding_lst.append(known_encoding1)
+known_encoding_lst.append(known_encoding1)
 label_lst.append("Boss")
-
-unknown_image = face_recognition.load_image_file("image2.jpg")
-unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
-
 
 while True:
     ret, frame = cap.read()
 
-    # img_resp = requests.get(url)                    # stores the image at the URL
-    # img_arr = np.array(bytearray(img_resp.content), dtype = np.uint8)   # converting image to numpy array
-    # frame = cv2.imdecode(img_arr, -1)               # decoding numpy array into a picture that is readable
+    #img_resp = requests.get(url)                    # stores the image at the URL
+    #img_arr = np.array(bytearray(img_resp.content), dtype = np.uint8)   # converting image to numpy array
+    #frame = cv2.imdecode(img_arr, -1)               # decoding numpy array into a picture that is readable
 
-    # scaleFactor > 1.5 can improve results but too high is bad
+    RGB_frame = frame[:, :, ::-1]
 
-    # h is bottomost coordinate of region of interest (height of roi), w is rightmost coordinate of region of interest (width of roi)
+    face_locations = face_recognition.face_locations(RGB_frame)
+    face_encodings = face_recognition.face_encodings(RGB_frame, face_locations)
 
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    for unknown_encode in unknown_encoding_lst:
+        results = face_recognition.compare_faces(known_encoding_lst, unknown_encode)
+        name = "Unknown"
 
-    face_locations = face_recognition.face_locations(gray)
-    face_encodings = face_recognition.face_encodings(gray, face_locations)
+        if True in results:
+            index = results.index(True)
+            name = label_lst[index]
+        
+        unknown_labels_lst.append(name)
 
-    for i in range(len(label_lst)):
-        results = face_recognition.compare_faces(
-            [encoding_lst[i]], face_encodings)
+    for i in range(len(unknown_labels_lst)):
+        cv2.rectangle(frame, (face_locations[i][3], face_locations[i][0]), (face_locations[i][1], face_encodings[i][2]), (255, 0, 0), 2)
 
-        if results[0] == True:
-            cv2.rectangle(gray, (face_locations[3], face_locations[0]), (
-                face_locations[1], face_locations[2]), (0, 255, 0), 2)
-            cv2.putText(gray, label_lst[i], (face_locations[3] + 5, face_locations[0] + 5, cv2.FONT_HERSHEY_DUPLEX, 2, (0, 255, 0), 2)
-
-        # img_item = "my_image.png"
-        # cv2.imwrite(img_item, face_recognition.face_locations(unknown_image))         # saves region of interest from color frame to file
-
-    if results == False:
-        cv2.putText(
-            gray, "Unknown", (face_locations[0], face_locations[1]), font, 1, color, stroke, cv2.LINE_AA)
+        cv2.rectangle(frame, (face_locations[i][3], face_locations[i][0] - 10), (face_locations[1], face_locations[2]), (255, 0, 0), 2)
+        cv2.putText(frame, unknown_labels_lst[i], (face_locations[i][3] + 3, face_locations[i][0] - 3), cv2.FONT_HERSHEY_DUPLEX, 2, (255, 254, 253), 2)
+    
+        img_item = "my_image.png"
+        cv2.imwrite(img_item, face_recognition.face_locations(frame))
 
     cv2.imshow('frame', frame)
 
