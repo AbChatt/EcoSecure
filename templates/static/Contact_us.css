@@ -1,13 +1,7 @@
-body{
+body {
   margin:0px;
   border:0px;
-  padding:0px;
-}
-
-div{
-  margin:0px;
-  border:0px;
-  padding:0px;
+  padding:0px; 
 }
 
 .navBarHeader {
@@ -34,7 +28,7 @@ h2 {
   padding:0px, 16px, 0px, 16px;
 }
 
-.aboutBlock {
+.contactUsBox {
   background-color: #1c3159;
   margin:0px;
   border:0px;
@@ -50,8 +44,30 @@ h1 {
   padding: 0px 16px 20px 16px;
 }
 
-.developers {
-  background-color: #E3E2E2;
+h3 {
+  font-size: 35px;
+  color:#171f2c;
+  padding-left: 20px;
+}
+
+h4 {
+  margin-top:0px; 	
+  font-size: 45px;
+  color:#171f2c;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.paraone {
+  font-size: 28px;
+  color:#171f2c;
+  padding-left: 20px;
+ }
+
+.paratwo {
+  color : #707070;
+  font-size: 20px;
+  padding-left: 20px;
 }
 
 .Footer {
@@ -108,26 +124,35 @@ ul {
   margin-left: 40px;
 }
 
-.name {
-  font-size: 22px;
+.textbox {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-.img1 {
-  float:left;
-  margin-left: 10px;
+.cust {
+	padding-right: 50px;
+	padding-top: 20px;
 }
 
-.img2 {
-  float:left;
-  margin-left: 40px;
+.formBox {
+	background-color: #E1E1E1;
+	font-size: 30px;
+	padding-left: 20px;
 }
 
-.img3 {
-  float:left;
-  margin-left: 40px;
+input[type=text] {
+  width: 30%;
+  height:25px;
 }
 
-.img4 {
-  float:left;
-  margin-left: 40px;
+input[type=textbox] {
+	width:50%;
+	height:200px;
+}
+
+input[type=submit] {
+	width:17%;
+	height:50px;
+	font-size:20px;
+	background-color: #ACE993;
 }
