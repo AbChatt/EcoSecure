@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 import pickle
+import requests
 
 # refer to opencv_cameratest for detailed explanation of basic underlying code
 # note that we need to copy the data folder to the same directory as our code in a folder called cascades
@@ -18,10 +19,17 @@ with open("labels.pickle", 'rb') as f:                  # reading label ids from
     og_labels = pickle.load(f)
     labels = {v:k for k, v in og_labels.items()}          # inverting key value relationship of dictionary - so we can get name
 
-cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture(0)
+
+url = "http://100.80.129.11:8080/shot.jpg"          # specific to IP address, port 8080
 
 while True:
-    ret, frame = cap.read()
+    #ret, frame = cap.read()
+
+    img_resp = requests.get(url)                    # stores the image at the URL
+    img_arr = np.array(bytearray(img_resp.content), dtype = np.uint8)   # converting image to numpy array
+    frame = cv2.imdecode(img_arr, -1)               # decoding numpy array into a picture that is readable
+
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # Model must be trained on grayscale version of video feed (documentation guidelines)
 
     # scaleFactor > 1.5 can improve results but too high is bad
