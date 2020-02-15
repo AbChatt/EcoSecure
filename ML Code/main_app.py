@@ -18,7 +18,7 @@ from app import trustedvisitor
 url = "http://100.80.129.11:8080/shot.jpg"
 
 # Load a sample picture and learn how to recognize it.
-obama_image = face_recognition.load_image_file("obama.jpg")
+obama_image = face_recognition.load_image_file("image1.jpg")
 obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
@@ -41,15 +41,18 @@ face_encodings = []
 face_names = []
 process_this_frame = True
 
+#cap = cv2.VideoCapture(0)
+
 while True:
     # Grab a single frame of video
     img_resp = requests.get(url)
     img_arr = np.array(bytearray(img_resp.content), dtype = np.uint8)
     frame = cv2.imdecode(img_arr, -1)
 
+    #ret, frame = cap.read()
 
     # Resize frame of video to 1/4 size for faster face recognition processing
-    small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
+    small_frame = cv2.resize(frame, (0, 0), fx=0.1, fy=0.1)
 
     # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
     rgb_small_frame = small_frame[:, :, ::-1]
@@ -86,10 +89,10 @@ while True:
     # Display the results
     for (top, right, bottom, left), name in zip(face_locations, face_names):
         # Scale back up face locations since the frame we detected in was scaled to 1/4 size
-        top *= 4
-        right *= 4
-        bottom *= 4
-        left *= 4
+        top *= 10
+        right *= 10
+        bottom *= 10
+        left *= 10
 
         # Draw a box around the face
         cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
