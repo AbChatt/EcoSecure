@@ -1,0 +1,103 @@
+body {
+  margin:0px;
+  border:0px;
+  padding:0px; 
+}
+
+.navBarHeader {
+  background-color: #e6e9ed;
+  overflow: hidden;
+}
+
+.navBarHeader a {
+  float: right;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navBarHeader a:hover {
+  color: #DA4E35;
+}
+
+.intro1 {
+
+}
+
+.intro2 {
+  background-color:#f5f5f5;
+}
+
+.intro3 {
+	
+}
+
+.intro4 {
+	background-color:#f5f5f5;
+}
+
+.comment {
+
+}
+
+.Footer {
+  background-color: #171f2c;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  font-family:'Poppins', sans-serif;
+  margin:0px;
+}
+
+.Footer a {
+  color: #ACC6E2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.Footer a:hover {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.phoneNumber {
+  color: #FF3E3E;
+  font-size: 27px;
+  padding: 0px 16px 0px 16px;
+  margin-top: 10px;
+  border-top: 0px; 
+  margin-bottom: 0px;
+}
+
+.footerPara {
+  color: #ACC6E2;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 0px;
+  border-top: 0px; 
+}
+
+.part1{
+  float: left; 
+}
+
+.part2{
+  float: left;
+  margin-left: 40px;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  padding: 0px 16px 20px 16px;
+}
