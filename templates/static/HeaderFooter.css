@@ -1,0 +1,54 @@
+.navBarHeader {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navBarHeader a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navBarHeader a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navBarHeader a.active {
+  background-color:#514C4D;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+.Footer {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.Footer a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.Footer a:hover {
+  color: blue;
+}
+
+.Footer a.active {
+  background-color:#514C4D;
+  color: white;
+}
+
+
+ul {
+    list-style: none;
+}
