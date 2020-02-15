@@ -40,10 +40,9 @@ while True:
     #img_arr = np.array(bytearray(img_resp.content), dtype = np.uint8)   # converting image to numpy array
     #frame = cv2.imdecode(img_arr, -1)               # decoding numpy array into a picture that is readable
 
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # Model must be trained on grayscale version of video feed (documentation guidelines)
 
     # scaleFactor > 1.5 can improve results but too high is bad
-    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.5, minNeighbors=5)   # values from documentation. Experiment to get best results
+    faces = face_cascade.detectMultiScale(frame, scaleFactor=1.5, minNeighbors=5)   # values from documentation. Experiment to get best results
 
     # h is bottomost coordinate of region of interest (height of roi), w is rightmost coordinate of region of interest (width of roi)
     for (x, y, w, h) in faces:                  # prints all the values from face (region of interest) in frame
@@ -56,9 +55,9 @@ while True:
 
         # recog API stuff
 
-        face_locations = face_recognition.face_locations(frame)
+        #face_locations = face_recognition.face_locations(frame)
 
-        unknown_encoding = face_recognition.face_encodings(frame)[0]
+        unknown_encoding = face_recognition.face_encodings(roi_color)[0]
 
         results = face_recognition.compare_faces([known_encoding1], unknown_encoding)
 
@@ -110,6 +109,6 @@ while True:
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
     
-    cap.release()
-    cv2.destroyAllWindows()
+cap.release()
+cv2.destroyAllWindows()
     
