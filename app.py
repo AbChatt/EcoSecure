@@ -8,16 +8,20 @@ def root():
     return render_template('Home.html')
 
 @app.route('/About_us')
+def About_us_page():
 	return render_template('About_us.html')
 
 @app.route('/Home')
+def Home_page():
 	return render_template('Home.html')
 
 @app.route('/Login')
+def Login_page():
 	return render_template('Login.html')
 
 @app.route('/Admin_login')
+def Admin_login_page():
 	return render_template('Admin_login.html')
 
 if __name__ == '__main__':
-	app.run(debug=True, host= '0.0.0.0', port=9000)
+	app.run(host= '0.0.0.0', port=9000)
