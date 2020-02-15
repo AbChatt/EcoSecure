@@ -10,7 +10,7 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def root():
-	return render_template('index.html')
+	return render_template('Home.html')
 
 @app.route('/Home')
 def Home_Page():
