@@ -28,11 +28,15 @@ def Login_page():
 @app.route('/signinform', methods=['GET', 'POST'])
 def signin_form():
     if request.method == 'POST':
-    	LoginID = str(request.form['LoginID'])
+        LoginID = str(request.form['LoginID'])
         Password = str(request.form['Password'])
         if LoginID in session:
             session['LoginID'] = LoginID
             return render_template('Lecture.html')
+
+@app.route('/trustedvisitor')
+def trustedvisitor():
+    return render_template('Trusted_visitor.html')
 
 
 @app.route('/Admin_login')
@@ -40,4 +44,4 @@ def Admin_login_page():
 	return render_template('Admin_login.html')
 
 if __name__ == '__main__':
-	app.run(host= '0.0.0.0', port=9000)
+	app.run()

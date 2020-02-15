@@ -2,6 +2,8 @@ import face_recognition
 import cv2
 import numpy as np
 import requests
+from flask import Flask, session, redirect, url_for, escape, request, render_template, g
+from app import trustedvisitor
 
 # This is a demo of running face recognition on live video from your webcam. It's a little more complicated than the
 # other example, but it includes some basic performance tweaks to make things run a lot faster:
@@ -68,6 +70,7 @@ while True:
             if True in matches:
                 first_match_index = matches.index(True)
                 name = known_face_names[first_match_index]
+                trustedvisitor()
 
             # Or instead, use the known face with the smallest distance to the new face
             # face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
