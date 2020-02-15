@@ -9,8 +9,8 @@ import requests
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()       # can use a different recogniser - such as a deep learning model
 face_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_frontalface_alt2.xml')  # calling the appropriate face model
-eye_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_eye.xml')    # calling the appropriate eye model
-smile_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_smile.xml')    # calling the appropriate smile model
+#eye_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_eye.xml')    # calling the appropriate eye model
+#smile_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_smile.xml')    # calling the appropriate smile model
 
 recognizer.read("trainer.yml")                          # read from training model
 
@@ -74,12 +74,12 @@ while True:
         width = x + w
         cv2.rectangle(frame, (x, y), (width, height), color, stroke)
 
-        eyes = eye_cascade.detectMultiScale(roi_gray)   # same as the face recognition, but for eye tracking
+        #eyes = eye_cascade.detectMultiScale(roi_gray)   # same as the face recognition, but for eye tracking
         
-        subitems = smile_cascade.detectMultiScale(roi_gray)    # same as eye tracking, but for smile recognition
+        #subitems = smile_cascade.detectMultiScale(roi_gray)    # same as eye tracking, but for smile recognition
 
-        for (ex, ey, ew, eh) in eyes:
-           cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)  # draw rectangle around eyes
+        #for (ex, ey, ew, eh) in eyes:
+        #   cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)  # draw rectangle around eyes
         
         #for (sx, sy, sw, sh) in sub_items:
          #   cv2.rectangle(roi_gray, (sx, sy), (sx + sw, sy + sh), (0, 255, 0), 2)   # draw rectangle around smile
