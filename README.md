@@ -31,6 +31,11 @@ In addition to the above, you will need Python (v3.6.8), HTML5 and CSS3. This ha
 ## Examples
 Some sample screenshots of functionality, the website would provide are shown below
 
+![SetupPage](https://github.com/AbChatt/EcoSecure/tree/master/screenshots/screenshot1.jpg) 
+![Dashboard](https://github.com/AbChatt/EcoSecure/tree/master/screenshots/screenshot2.jpg)
+![AddUser](https://github.com/AbChatt/EcoSecure/tree/master/screenshots/screenshot3.jpg)
+![Notify](https://github.com/AbChatt/EcoSecure/tree/master/screenshots/screenshot4.jpg) 
+
 ## Status
 As of February 2020 (last commit was the 16th), the project is active
 
