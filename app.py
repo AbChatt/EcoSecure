@@ -48,10 +48,12 @@ def signin_form():
     else:
         return render_template('index.html')
 
-@app.route('/trustedvisitor', methods=['GET'])
+@app.route('/trustedvisitor', methods=['GET', 'POST'])
 def trusted_visitor():
-    if request.method == 'GET':
-        return requests.get('url').content()
+    if request.method == 'GET' or request.method == 'POST':
+        return render_template('Trusted_visitor.html')
+    return "OOPS!" 
+
 @app.route("/signup.html")
 def signup_page():
     return render_template('signup.html')
@@ -68,12 +70,6 @@ def signup_form():
         return "Signin Recorded!!!"
     else:
         return "Signup not recorded!!!"
-
-
-@app.route('/trustedvisitor', methods=['GET', 'POST'])
-def trusted_visitor():
-    if request.method == 'POST' or request.method == 'GET':
-        return render_template('Trusted_template')
 
 if __name__ == '__main__':
 	app.run()
