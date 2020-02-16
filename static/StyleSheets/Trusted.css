@@ -1,27 +1,21 @@
 body {
   margin: 0px;
   border:0px;
-  padding:20px;
+  padding:0px;
   background-color: #D7DBDD;
 }
 
 h1 {
-  padding-top:20px;
-  color:red;
+  padding-top:100px;
+  color:green;
   text-align: center;
   align-content: center;
   align-items: center;
   align-self: center;
-  font-size:70px;
+  font-size:150px;
 }
 .box {
   align-items: center;
   align-self: center;
   align-content: center;
-}
-
-ul {
-  padding-top:100px;
-  color:red;
-  font-size:70px;
 }
