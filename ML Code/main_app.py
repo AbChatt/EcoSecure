@@ -2,6 +2,7 @@ import face_recognition
 import cv2
 import numpy as np
 import requests
+import webbrowser
 from flask import Flask, session, redirect, url_for, escape, request, render_template, g
 
 
@@ -73,8 +74,13 @@ while True:
             if True in matches:
                 first_match_index = matches.index(True)
                 name = known_face_names[first_match_index]
-                
+            
+                r = requests.get('http://127.0.0.1:5000/trustedvisitor')   # sends a GET request to the web dashboard
 
+                if r.status_code == 200:
+                    webbrowser.open('http://127.0.0.1:5000/trustedvisitor', new=2)
+
+                
             # Or instead, use the known face with the smallest distance to the new face
             # face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
             # best_match_index = np.argmin(face_distances)

@@ -1,4 +1,5 @@
 import sqlite3
+import requests
 from flask import Flask, session, redirect, url_for, escape, request, render_template, g
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
@@ -46,6 +47,12 @@ def signin_form():
                 return "Wrong username/password!"
     else:
         return render_template('index.html')
+
+@app.route('/trustedvisitor', methods=['GET', 'POST'])
+def trusted_visitor():
+    if request.method == 'GET' or request.method == 'POST':
+        return render_template('Trusted_visitor.html')
+    return "OOPS!" 
 
 @app.route("/signup.html")
 def signup_page():
