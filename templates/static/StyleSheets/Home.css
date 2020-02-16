@@ -1,0 +1,151 @@
+body {
+  margin:0px;
+  border:0px;
+  padding:0px; 
+}
+
+.navBarHeader {
+  background-color: #e6e9ed;
+  overflow: hidden;
+}
+
+.navBarHeader a {
+  float: right;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navBarHeader a:hover {
+  color: #DA4E35;
+}
+
+.intro1 {
+  padding-left: 16px;	
+  background-color:#C7D3EA;
+  border-bottom: 1px solid;
+  border-color: #D1D1D1;
+   
+}
+
+.intro2 {
+  padding-left: 16px;		
+  background-color: white;
+}
+
+.intro3 {
+  padding-left: 16px;	
+  background-color:#D3D4D5
+}
+
+.intro4 {
+  padding-left: 16px;	
+  background-color: #e6edf3;
+}
+
+.comment {
+  padding-left: 16px;	
+  background-color:#112850;
+}
+
+.Footer {
+  background-color: #171f2c;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  font-family:'Poppins', sans-serif;
+  margin:0px;
+}
+
+.Footer a {
+  color: #ACC6E2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.Footer a:hover {
+  color: white;
+}
+
+.ulo {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.phoneNumber {
+  color: #FF3E3E;
+  font-size: 27px;
+  padding: 0px 16px 0px 16px;
+  margin-top: 10px;
+  border-top: 0px; 
+  margin-bottom: 0px;
+}
+
+.footerPara {
+  color: #ACC6E2;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 0px;
+  border-top: 0px; 
+}
+
+.part1{
+  float: left; 
+}
+
+.part2{
+  float: left;
+  margin-left: 40px;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  padding: 0px 0px 5px 16px;
+}
+
+ul {
+  font-size: 16px;
+  font-family: sans-serif;
+  color:#4C4D4F;
+}
+
+.SmallGrey {
+  font-size: 16px;
+  font-family: sans-serif;
+  color:#4C4D4F;
+}
+
+.SmallBlue {
+  color:#112850;
+  font-size:30px; 
+}
+
+.BigBlue {
+  color:#112850;
+  font-style:bold;
+}
+
+.CenterBigBlue {
+  color:#112850;
+  font-style:bold;
+  text-align: center;
+}
+
+.ctxt {
+  color:white;
+  font-family: serif;
+  font-size: 20px;
+}
+
+.cname {
+  color:#569AEF;
+  font-family: sans-serif;
+  font-size: 30px;
+}

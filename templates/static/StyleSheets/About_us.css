@@ -1,0 +1,173 @@
+body{
+  margin:0px;
+  border:0px;
+  padding:0px;
+}
+
+div{
+  margin:0px;
+  border:0px;
+  padding:0px;
+}
+
+.navBarHeader {
+  background-color: #e6e9ed;
+  overflow: hidden;
+}
+
+.navBarHeader a {
+  float: right;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navBarHeader a:hover {
+  color: #DA4E35;
+}
+
+h2 {
+  color:white;
+  font-size:40px;
+  padding:0px, 16px, 0px, 16px;
+}
+
+.aboutBlock {
+  background-color: #1c3159;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  overflow: hidden;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  padding: 0px 16px 20px 16px;
+}
+
+.developers {
+  background-color: #E3E2E2;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 25px;
+}
+
+.developercard {
+  display: flex;
+  margin: 5px;
+}
+
+.dimg{
+  border-radius: 15px;
+}
+
+.dtext {
+  justify-content: flex-end;
+  padding: 5px;
+  font-size: 22px;
+}
+
+.Footer {
+  background-color: #171f2c;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  font-family:'Poppins', sans-serif;
+  margin:0px;
+}
+
+.Footer a {
+  color: #ACC6E2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.Footer a:hover {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.phoneNumber {
+  color: #FF3E3E;
+  font-size: 27px;
+  padding: 0px 16px 0px 16px;
+  margin-top: 10px;
+  border-top: 0px; 
+  margin-bottom: 0px;
+}
+
+.footerPara {
+  color: #ACC6E2;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 0px;
+  border-top: 0px; 
+}
+
+.infoimage {
+  height: 400px;
+  width: 100%;
+}
+
+.infotext {
+  padding: 5px;
+  margin-top: 0px;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 25px;
+  background-color:#EBEDEF;
+  border-radius: 5px;
+
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.part1{
+  float: left; 
+}
+
+.part2{
+  float: left;
+  margin-left: 40px;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.img1 {
+  float:left;
+  margin-left: 10px;
+}
+
+.img2 {
+  float:left;
+  margin-left: 40px;
+}
+
+.img3 {
+  float:left;
+  margin-left: 40px;
+}
+
+.img4 {
+  float:left;
+  margin-left: 40px;
+}
