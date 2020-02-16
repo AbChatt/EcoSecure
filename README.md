@@ -29,7 +29,7 @@ This project requires the following libraries and frameworks:
 In addition to the above, you will need Python (v3.6.8), HTML5 and CSS3. This has also been tested on Python v3.7.4 but newer versions may create issues
 
 ## Examples
-Some sample screenshots of functionality the website would provide are shown below
+Some sample screenshots of functionality, the website would provide are shown below
 
 ## Status
 As of February 2020 (last commit was the 16th), the project is active
