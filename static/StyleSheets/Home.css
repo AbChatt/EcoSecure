@@ -162,7 +162,6 @@ h4{
   font-size: 18px;
 }
 
-
 ul {
   font-size: 16px;
   font-family: sans-serif;
@@ -202,8 +201,8 @@ ul {
   color:white;
   font-family: serif;
   font-size: 20px;
-  align-self: flex-end;
   width: 80%;
+
 }
 
 .cname {
@@ -214,10 +213,11 @@ ul {
 }
 
 .dp{
-  box-shadow: 4px 4px black;
   align-self: flex-start;
   width: 20%;
+  margin-right: 20px;
 }
+
 
 .Footer h1{
   color: white;
