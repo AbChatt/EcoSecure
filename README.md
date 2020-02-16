@@ -35,4 +35,4 @@ Some sample screenshots of functionality the website would provide are shown bel
 As of February 2020 (last commit was the 16th), the project is active
 
 ## Acknowledgements
-Parts of this project were adapted from . Furthermore, we used the facial recognition API and took inspiration from .
+Parts of this project were adapted from [OpenCV Python Series](https://github.com/codingforentrepreneurs/OpenCV-Python-Series). Furthermore, we used the [facial recognition API](https://github.com/ageitgey/face_recognition) and took inspiration from [this](https://github.com/ageitgey/face_recognition/blob/master/examples/facerec_from_webcam_faster.py) example.
