@@ -69,5 +69,11 @@ def signup_form():
     else:
         return "Signup not recorded!!!"
 
+
+@app.route('/trustedvisitor', methods=['GET', 'POST'])
+def trusted_visitor:
+    if request.method == 'POST' or request.method == 'GET':
+        return render_template('Trusted_template')
+
 if __name__ == '__main__':
 	app.run()
