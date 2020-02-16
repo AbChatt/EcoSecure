@@ -71,7 +71,7 @@ def signup_form():
 
 
 @app.route('/trustedvisitor', methods=['GET', 'POST'])
-def trusted_visitor:
+def trusted_visitor():
     if request.method == 'POST' or request.method == 'GET':
         return render_template('Trusted_template')
 
