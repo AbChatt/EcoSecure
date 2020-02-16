@@ -31,10 +31,10 @@ In addition to the above, you will need Python (v3.6.8), HTML5 and CSS3. This ha
 ## Examples
 Some sample screenshots of functionality, the website would provide are shown below
 
-![SetupPage](screenshots/screenshot1.jpg) 
-![Dashboard](screenshots/screenshot2.jpg)
-![AddUser](screenshots/screenshot3.jpg)
-![Notify](screenshots/screenshot4.jpg) 
+![SetupPage](screenshots/screenshot_1.png) 
+![Dashboard](screenshots/screenshot_2.png)
+![AddUser](screenshots/screenshot_3.png)
+![Notify](screenshots/screenshot_4.png) 
 
 ## Status
 As of February 2020 (last commit was the 16th), the project is active
