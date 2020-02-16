@@ -96,10 +96,13 @@ while True:
 
             face_names.append(name)
 
-            if name == "Unknown" and count_unknown == 5:
-                if not unknown_tab_open:
-                    unknown_tab_open = webbrowser.open('http://127.0.0.1:5000/trustedvisitor', new=2)
-                    count_unknown = 0
+            if name == "Unknown":
+                count_unknown += 1
+                if count_unknown == 5:
+                    s = requests.get('http://127.0.0.1:5000/unknownvisitor')
+                    if s.status_code == 200 and not unknown_tab_open:
+                        unknown_tab_open = webbrowser.open('http://127.0.0.1:5000/unknownvisitor', new=2)
+                        count_unknown = 0
 
     process_this_frame = not process_this_frame
 
