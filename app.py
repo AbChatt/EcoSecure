@@ -5,7 +5,7 @@ from sqlalchemy.sql import text
 
 app=Flask(__name__)
 app.secret_key = 'George#1'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///assignment3.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///camApp.db'
 db = SQLAlchemy(app)
 
 @app.route('/')
@@ -32,12 +32,37 @@ def signin_form():
         Password = str(request.form['Password'])
         if LoginID in session:
             session['LoginID'] = LoginID
-            return render_template('Lecture.html')
+            return render_template('Logged in already!')
+        else:
+            sql = ("""Select * FROM Accounts""")
+            Accounts = db.engine.execute(text(sql))
+            for Account in Accounts:
+                if Account['Email'] == LoginID:
+                    if Account['Password'] == Password:
+                        session['LoginID'] = LoginID
+                        session['FullName'] = Account['firstname'] + " " + Account['lastname']
+                        return 'Logged in!'   
+            else:
+                return "Wrong username/password!"
+    else:
+        return render_template('index.html')
 
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
 
-@app.route('/Admin_login')
-def Admin_login_page():
-	return render_template('Admin_login.html')
+@app.route('/signupform', methods=['GET', 'POST'])
+def signup_form():
+    if request.method == 'POST':
+        firstname = str(request.form['firstname'])
+        lastname = str(request.form['lastname'])
+        LoginID = str(request.form['emailadd'])
+        Password = str(request.form['password'])
+        sql = ("""INSERT INTO Accounts VALUES ('{}', '{}', '{}', '{}')""".format(firstname, lastname, LoginID, Password))
+        db.engine.execute(text(sql))
+        return "Signin Recorded!!!"
+    else:
+        return "Signup not recorded!!!"
 
 if __name__ == '__main__':
 	app.run(host= '0.0.0.0', port=9000)
