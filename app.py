@@ -47,7 +47,7 @@ def signin_form():
     else:
         return render_template('index.html')
 
-@app.route("/signup")
+@app.route("/signup.html")
 def signup_page():
     return render_template('signup.html')
 

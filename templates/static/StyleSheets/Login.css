@@ -74,3 +74,19 @@ body{
 .navBarHeader a:hover {
   color: #DA4E35;
 }
+
+h2 {
+  color:white;
+  font-size:40px;
+  padding:0px, 16px, 0px, 16px;
+}
+
+.loginBox {
+  background-color: #1c3159;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  overflow: hidden;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+}
