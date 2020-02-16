@@ -162,6 +162,7 @@ h4{
   font-size: 18px;
 }
 
+
 ul {
   font-size: 16px;
   font-family: sans-serif;
@@ -193,11 +194,16 @@ ul {
   text-align: center;
 }
 
+.comment{
+  display: flex;
+}
+
 .ctxt {
   color:white;
   font-family: serif;
   font-size: 20px;
-  text-align: center;
+  align-self: flex-end;
+  width: 80%;
 }
 
 .cname {
@@ -209,10 +215,8 @@ ul {
 
 .dp{
   box-shadow: 4px 4px black;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 8%;
+  align-self: flex-start;
+  width: 20%;
 }
 
 .Footer h1{
