@@ -102,7 +102,7 @@ while True:
                         webbrowser.open('http://127.0.0.1:5000/unknownvisitor', new=2)
                         count_unknown = 0
 
-                        cv2.
+                        cv2.imwrite(img_item, frame)
 
     process_this_frame = not process_this_frame
 
