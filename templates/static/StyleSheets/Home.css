@@ -60,7 +60,7 @@ body {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 60%;
 }
 
 .intro1head {
@@ -68,9 +68,7 @@ body {
 }
 
 .picture{
-  height: 300px;
-  width: 30%;
-  
+  width: 35%;
 }
 
 .intro2 {
@@ -83,12 +81,23 @@ body {
 
 .intro3 {
   padding-left: 16px;	
-  background-color:#D3D4D5
+  background-color:#D3D4D5;
+  display: flex;
+}
+
+.intro3text{
+  width: 70%;
+  margin-right: 0px;
+}
+
+.frontpic{
+  width: 29%;
 }
 
 .intro4 {
   padding-left: 16px;	
   background-color: #e6edf3;
+  display: flex
 }
 
 .comment {
@@ -174,6 +183,7 @@ ul {
   color:#4C4D4F;
   width: 95%;
   margin-left: 1rem;
+  margin-left: 0;
 }
 
 .SmallBlue {
@@ -231,4 +241,9 @@ ul {
   padding-left: 50px;
   font-family:'Poppins', sans-serif;
   margin:0px;
+}
+
+.phonepic{
+  width: 500px;
+  align-self: center;
 }
