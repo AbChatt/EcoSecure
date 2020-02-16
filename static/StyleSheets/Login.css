@@ -1,3 +1,56 @@
+html {
+    height: 100%;
+}
 body{
-	background-image: url("Pictures/Login_Background.png");
+	background-image: url("Login_Background.png");
+	background-size: 100%;
+	margin: 0;
+	min-height: 100%;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin: auto;
+
+}
+.login_box {
+	background-color: #2470d3;
+	width: 400px;
+	height: 500px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+  	flex-direction: column;
+}
+
+.userform {
+	display:flex;
+	flex-direction: column;
+}
+
+.UserInput {
+	width: 110%;
+  	height:25px;
+  	margin-top: 50px;
+  	flex-direction: column;
+  	align-self: center;
+  	justify-content: center;
+}
+
+.Login_title {
+	font-size: 35px;
+	vertical-align: text-top;
+	margin-top: 10px;
+	flex-direction: column;
+}
+
+.logBttn {
+	margin-top: 15px;
+	font-size: 30px;
 }
