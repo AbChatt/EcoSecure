@@ -106,6 +106,7 @@ body {
   padding-left: 50px;
   font-family:'Poppins', sans-serif;
   margin:0px;
+  position: relative;
 }
 
 .Footer a {
@@ -153,6 +154,16 @@ body {
 }
 
 
+
+h4{
+  position: absolute;
+  bottom: 0;
+  border-top: solid;
+  border-color: darkblue;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
 
 ul {
   font-size: 16px;
