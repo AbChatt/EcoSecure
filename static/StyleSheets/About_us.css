@@ -64,13 +64,9 @@ h1 {
   margin: 5px;
 }
 
-.dimg{
-  border-radius: 15px;
-}
-
 .dtext {
   justify-content: flex-end;
-  padding: 5px;
+  padding: 20px;
   font-size: 22px;
 }
 
@@ -96,7 +92,7 @@ h1 {
   color: white;
 }
 
-ul {
+.ulo {
   list-style: none;
   padding-left: 0px;
 }
@@ -136,7 +132,9 @@ ul {
 
 h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px; 
 }
 
 .part1{
@@ -155,19 +153,53 @@ h3 {
 .img1 {
   float:left;
   margin-left: 10px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .img2 {
   float:left;
   margin-left: 40px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .img3 {
   float:left;
   margin-left: 40px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .img4 {
   float:left;
   margin-left: 40px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px grey;
 }
+
+.SmallGrey {
+  font-size: 16px;
+  font-family: sans-serif;
+  color:#4C4D4F;
+  padding-left: 16px;
+}
+
+.SmallBlue {
+  color:#112850;
+  font-size:30px; 
+  padding-left: 16px;
+}
+
+.BigBlue {
+  color:#112850;
+  font-style:bold;
+  padding-left: 16px;
+}
+
+ul {
+  font-size: 16px;
+  font-family: sans-serif;
+  color:#4C4D4F;
+}
+

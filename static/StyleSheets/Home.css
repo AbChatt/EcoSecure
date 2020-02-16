@@ -27,7 +27,16 @@ body {
   background-color:#C7D3EA;
   border-bottom: 1px solid;
   border-color: #D1D1D1;
-   
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+}
+
+.picture{
+  height: 300px;
+  width: 30%;
+  align-self: flex-end;
 }
 
 .intro2 {
@@ -120,11 +129,13 @@ ul {
   font-size: 16px;
   font-family: sans-serif;
   color:#4C4D4F;
+  width: 60%;
 }
 
 .SmallBlue {
   color:#112850;
   font-size:30px; 
+  width: 60%;
 }
 
 .BigBlue {

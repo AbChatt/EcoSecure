@@ -1,10 +1,60 @@
-.signupform{
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-	display: flex;
+.navBarHeader {
+  background-color: #e6e9ed;
+  overflow: hidden;
 }
 
-.userinput{
-	
+.navBarHeader a {
+  float: right;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navBarHeader a:hover {
+  color: #DA4E35;
+}
+
+h2 {
+  color:white;
+  font-size:40px;
+  padding:0px, 16px, 0px, 16px;
+}
+
+.signUpBox {
+  background-color: #1c3159;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  overflow: hidden;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+}
+
+.formBox {
+	padding-left: 35%;
+}
+
+input[type=text] {
+  width: 40%;
+  height:25px;
+}
+
+input[type=email] {
+  width: 40%;
+  height:25px;
+}
+
+input[type=password] {
+	width:40%;
+	height:25px;
+}
+
+input[type=submit] {
+	width:17%;
+	height:50px;
+	font-size:20px;
+	background-color: #333;
+	color: white;
 }
