@@ -12,16 +12,16 @@ db = SQLAlchemy(app)
 def root():
 	return render_template('Home.html')
 
-@app.route('/Home')
+@app.route('/Home.html')
 def Home_Page():
     # tells Flask to render the HTML page called Home.html
     return render_template('Home.html')
 
-@app.route('/About_us')
+@app.route('/About_us.html')
 def About_us_page():
 	return render_template('About_us.html')
 
-@app.route('/Login')
+@app.route('/Login.html')
 def Login_page():
 	return render_template('Login.html')
 
@@ -46,6 +46,10 @@ def signin_form():
                 return "Wrong username/password!"
     else:
         return render_template('index.html')
+
+@app.route("/signup")
+def signup_page():
+    return render_template('signup.html')
 
 @app.route('/signupform', methods=['GET', 'POST'])
 def signup_form():
