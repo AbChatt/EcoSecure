@@ -19,12 +19,14 @@ body{
 .login_box {
 	background-color: #3D527D;
 	width: 400px;
-	height: 500px;
+  height: 500px;
+  border-style: dashed;
 	border-radius: 25px;
 	display: flex;
 	align-items: center;
   flex-direction: column;
   margin-left: 120px;
+  box-shadow: 10px 10px grey;
 }
 
 .userform {
