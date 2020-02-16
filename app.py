@@ -28,7 +28,7 @@ def Login_page():
 @app.route('/signinform', methods=['GET', 'POST'])
 def signin_form():
     if request.method == 'POST':
-    	LoginID = str(request.form['LoginID'])
+        LoginID = str(request.form['LoginID'])
         Password = str(request.form['Password'])
         if LoginID in session:
             session['LoginID'] = LoginID
@@ -47,10 +47,6 @@ def signin_form():
     else:
         return render_template('index.html')
 
-@app.route('/signup')
-def signup():
-    return render_template('signup.html')
-
 @app.route('/signupform', methods=['GET', 'POST'])
 def signup_form():
     if request.method == 'POST':
@@ -65,4 +61,4 @@ def signup_form():
         return "Signup not recorded!!!"
 
 if __name__ == '__main__':
-	app.run(host= '0.0.0.0', port=9000)
+	app.run()
