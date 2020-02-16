@@ -52,7 +52,13 @@ def signin_form():
 def trusted_visitor():
     if request.method == 'GET' or request.method == 'POST':
         return render_template('Trusted_visitor.html')
-    return "OOPS!" 
+    return "<h1>OOPS!</h1>" 
+
+@app.route('/unknownvisitor', methods=['GET', 'POST'])
+def unknown_visitor():
+    if request.method == 'GET' or request.method == 'POST':
+        return render_template('Unknown_visitor.html')
+    return "<h1>OOPS!</h1>" 
 
 @app.route("/signup.html")
 def signup_page():
