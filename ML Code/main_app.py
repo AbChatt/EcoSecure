@@ -81,7 +81,6 @@ while True:
                     webbrowser.open('http://127.0.0.1:5000/Trusted-visitor', new=2)
 
                 
-
             # Or instead, use the known face with the smallest distance to the new face
             # face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
             # best_match_index = np.argmin(face_distances)
