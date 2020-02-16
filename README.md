@@ -2,12 +2,12 @@
  A simple application that uses a Python deep learning model in order to recognise and identify faces. The model interfaces with a HTML/CSS web dashboard using the Flask API in order to reflect the findings of the model. For instance, if an authenticated user (specified by the owner of the app) is detected, then it notifies the web dashboard of this. Conceived during Hack The Valley 4 (2020).
 
 # Table of Contents
-Introduction (https://github.com/AbChatt/EcoSecure#introduction)
-*[Technologies]
-*[Requirements]
-*[Examples] 
-*[Status] 
-*[Acknowledgements] 
+[Introduction] (https://github.com/AbChatt/EcoSecure#introduction)
+[Technologies] (https://github.com/AbChatt/EcoSecure#technologies)
+[Requirements] (https://github.com/AbChatt/EcoSecure#requirements)
+[Examples]     (https://github.com/AbChatt/EcoSecure#examples)
+[Status]       (https://github.com/AbChatt/EcoSecure#status)
+[Acknowledgements] (https://github.com/AbChatt/EcoSecure#acknowledgments)
 
 ## Introduction 
 Home Security has always been an innovative segment of the market. From the 
