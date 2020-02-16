@@ -42,7 +42,9 @@ face_encodings = []
 face_names = []
 process_this_frame = True
 tab_open = False
+unknown_tab_open = False
 count = 0
+count_unknown = 0
 
 #cap = cv2.VideoCapture(0)
 
@@ -93,6 +95,11 @@ while True:
             #     name = known_face_names[best_match_index]
 
             face_names.append(name)
+
+            if name == "Unknown" and count_unknown == 5:
+                if not unknown_tab_open:
+                    unknown_tab_open = webbrowser.open('http://127.0.0.1:5000/trustedvisitor', new=2)
+                    count_unknown = 0
 
     process_this_frame = not process_this_frame
 
