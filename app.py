@@ -22,6 +22,14 @@ def Home_Page():
 def About_us_page():
 	return render_template('About_us.html')
 
+@app.route('/Contact_us.html')
+def Contact_us_page():
+	return render_template('Contact_us.html')
+
+@app.route('/Acc_info.html')
+def Acc_info_page():
+	return render_template('Acc_info.html')
+
 @app.route('/Login.html')
 def Login_page():
 	return render_template('Login.html')
@@ -33,7 +41,8 @@ def signin_form():
         Password = str(request.form['Password'])
         if LoginID in session:
             session['LoginID'] = LoginID
-            return render_template('Logged in already!')
+            flash('You are already logged in')
+            return render_template('UserInterface')
         else:
             sql = ("""Select * FROM Accounts""")
             Accounts = db.engine.execute(text(sql))
@@ -42,9 +51,10 @@ def signin_form():
                     if Account['Password'] == Password:
                         session['LoginID'] = LoginID
                         session['FullName'] = Account['firstname'] + " " + Account['lastname']
-                        return 'Logged in!'   
+                        return render_template('UserInterface.html')   
             else:
-                return "Wrong username/password!"
+                flash('Wrong username/password!')
+                return render_template('Login.html')
     else:
         return render_template('index.html')
 
