@@ -6,7 +6,7 @@ body{
 	background-size: 100%;
   background-repeat: no-repeat;
 	margin: 0;
-  height: 100%;
+  height: 90%;
 }
 
 .container {
@@ -86,4 +86,8 @@ h2 {
   overflow: hidden;
   text-align: center;
   font-family:'Poppins', sans-serif;
+}
+
+.newlink{
+  font-size: 20px;
 }
