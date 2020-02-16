@@ -74,16 +74,13 @@ while True:
             if True in matches:
                 first_match_index = matches.index(True)
                 name = known_face_names[first_match_index]
-<<<<<<< HEAD
             
                 r = requests.get('http://127.0.0.1:5000/Trusted-visitor')   # sends a GET request to the web dashboard
 
                 if r.status_code == 200:
                     webbrowser.open('http://127.0.0.1:5000/Trusted-visitor', new=2)
 
-=======
                 
->>>>>>> ee0da0e41fc585fe2699c1468f616ba0b34b2cb7
 
             # Or instead, use the known face with the smallest distance to the new face
             # face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
