@@ -4,19 +4,16 @@ html {
 body{
 	background-image: url("Login_Background.png");
 	background-size: 100%;
+  background-repeat: no-repeat;
 	margin: 0;
-	min-height: 100%;
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
+  height: 100%;
 }
 
 .container {
-	height: 100%;
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 .login_box {
@@ -26,7 +23,7 @@ body{
 	border-radius: 25px;
 	display: flex;
 	align-items: center;
-  	flex-direction: column;
+  flex-direction: column;
 }
 
 .userform {
@@ -36,11 +33,11 @@ body{
 
 .UserInput {
 	width: 110%;
-  	height:25px;
-  	margin-top: 50px;
-  	flex-direction: column;
-  	align-self: center;
-  	justify-content: center;
+  height:25px;
+  margin-top: 50px;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
 }
 
 .Login_title {
@@ -58,8 +55,8 @@ body{
 .navBarHeader {
   background-color: #e6e9ed;
   overflow: hidden;
-  display: block;
-  align-items: flex-start;
+  width: 100%;
+
 }
 
 .navBarHeader a {
