@@ -18,6 +18,16 @@ This project consists of a Python backend, which implements a Convolutional Neur
 ## Requirements
 This project requires the following libraries and frameworks:
 
+* Flask v1.1.1
+* numpy v1.18.1
+* Pillow v7.0.0
+* opencv-contrib-python v4.2.0.32
+* face_recognition v1.2.3
+* flask_sqlalchemy v2.4.1
+* requests v2.22.0
+
+In addition to the above, you will need Python (v3.6.8), HTML5 and CSS3. This has also been tested on Python v3.7.4 but newer versions may create issues
+
 ## Examples
 Some sample screenshots of functionality the website would provide are shown below
 
