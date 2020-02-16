@@ -24,6 +24,7 @@ body{
 	display: flex;
 	align-items: center;
   flex-direction: column;
+  margin-left: 120px;
 }
 
 .userform {
@@ -50,8 +51,11 @@ body{
 }
 
 .logBttn {
+  align-self: center;
 	margin-top: 15px;
-	font-size: 30px;
+  font-size: 30px;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 5px 6px #000000;
 }
 
 .navBarHeader {
@@ -81,6 +85,7 @@ h2 {
 }
 
 .loginBox {
+  align-content: center;
   background-color: #1c3159;
   margin:0px;
   border:0px;
