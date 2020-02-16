@@ -48,16 +48,13 @@ def signin_form():
     else:
         return render_template('index.html')
 
-<<<<<<< HEAD
 @app.route('/trustedvisitor', methods=['GET'])
 def trusted_visitor():
     if request.method == 'GET':
         return requests.get('url').content()
-=======
 @app.route("/signup.html")
 def signup_page():
     return render_template('signup.html')
->>>>>>> ee0da0e41fc585fe2699c1468f616ba0b34b2cb7
 
 @app.route('/signupform', methods=['GET', 'POST'])
 def signup_form():
