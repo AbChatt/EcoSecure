@@ -5,15 +5,30 @@
 	<link rel="stylesheet" type="text/css" href="static/StyleSheets/signup.css">
 </head>
 <body>
-	<h1>Welcome to XXX! Please create a account below so that we can move towards a safer future TOGETHER</h1>
-	<form class ="signupform" action="signupform" method="post">
-		<input type="text" name="firstname" class="userinput" placeholder="First Name">
-		<input type="text" name="lastname" class="userinput" placeholder="Last Name">
-		<input type="email" name="emailadd" class="userinput" placeholder="Email Address">
-		<input type="password" name="password" class="userinput" placeholder="Password">
-		<input type="password" name="confirmpassword" class="userinput" placeholder="confirmPassword">
-		<input type='submit' value='SignUp' class="signupbttn">
-	</form>
+	<div class = "navBarHeader">
+		<a href="Login.html">LOGIN</a>
+		<a href="Contact_us.html">CONTACT US</a>
+		<a href="About_us.html">ABOUT US</a>
+		<a href="Home.html">HOME</a>
+	</div>
+
+	<div class = "signUpBox">
+		<h2>SIGN UP<h2>
+	</div>
+
+	<div class = "formBox">	
+		<form class ="signupform" action="signupform" method="post">
+			<br>
+			<br>
+			<br>
+			<input type="text" name="firstname" class="userinput" placeholder="First Name" align="center"><br><br>
+			<input type="text" name="lastname" class="userinput" placeholder="Last Name"><br><br>
+			<input type="email" name="emailadd" class="userinput" placeholder="Email Address"><br><br>
+			<input type="password" name="password" class="userinput" placeholder="Password"><br><br>
+			<input type="password" name="confirmpassword" class="userinput" placeholder="confirmPassword"><br><br>
+			<input type='submit' value='SignUp' class="signupbttn">
+		</form>
+	</div>
 
 </body>
 </html>

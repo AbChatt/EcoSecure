@@ -1,0 +1,93 @@
+html {
+    height: 100%;
+}
+body{
+	background-image: url("Login_Background.png");
+	background-size: 100%;
+  background-repeat: no-repeat;
+	margin: 0;
+  height: 90%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.login_box {
+	background-color: #2470d3;
+	width: 400px;
+	height: 500px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+  flex-direction: column;
+}
+
+.userform {
+	display:flex;
+	flex-direction: column;
+}
+
+.UserInput {
+	width: 110%;
+  height:25px;
+  margin-top: 50px;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.Login_title {
+	font-size: 35px;
+	vertical-align: text-top;
+	margin-top: 10px;
+	flex-direction: column;
+}
+
+.logBttn {
+	margin-top: 15px;
+	font-size: 30px;
+}
+
+.navBarHeader {
+  background-color: #e6e9ed;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.navBarHeader a {
+  float: right;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navBarHeader a:hover {
+  color: #DA4E35;
+}
+
+h2 {
+  color:white;
+  font-size:40px;
+  padding:0px, 16px, 0px, 16px;
+}
+
+.loginBox {
+  background-color: #1c3159;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  overflow: hidden;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+}
+
+.newlink{
+  font-size: 20px;
+}

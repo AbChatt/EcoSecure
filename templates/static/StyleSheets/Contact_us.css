@@ -1,0 +1,159 @@
+body {
+  margin:0px;
+  border:0px;
+  padding:0px; 
+}
+
+.navBarHeader {
+  background-color: #e6e9ed;
+  overflow: hidden;
+}
+
+.navBarHeader a {
+  float: right;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navBarHeader a:hover {
+  color: #DA4E35;
+}
+
+h2 {
+  color:white;
+  font-size:40px;
+  padding:0px, 16px, 0px, 16px;
+}
+
+.contactUsBox {
+  background-color: #1c3159;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  overflow: hidden;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  padding: 0px 16px 20px 16px;
+}
+
+h3 {
+  font-size: 35px;
+  color:#171f2c;
+  padding-left: 20px;
+}
+
+h4 {
+  margin-top:0px; 	
+  font-size: 45px;
+  color:#171f2c;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.paraone {
+  font-size: 28px;
+  color:#171f2c;
+  padding-left: 20px;
+ }
+
+.paratwo {
+  color : #707070;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.Footer {
+  background-color: #171f2c;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  font-family:'Poppins', sans-serif;
+  margin:0px;
+}
+
+.Footer a {
+  color: #ACC6E2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.Footer a:hover {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.phoneNumber {
+  color: #FF3E3E;
+  font-size: 27px;
+  padding: 0px 16px 0px 16px;
+  margin-top: 10px;
+  border-top: 0px; 
+  margin-bottom: 0px;
+}
+
+.footerPara {
+  color: #ACC6E2;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 0px;
+  border-top: 0px; 
+}
+
+.part1{
+  float: left; 
+}
+
+.part2{
+  float: left;
+  margin-left: 40px;
+}
+
+.textbox {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.cust {
+	padding-right: 50px;
+	padding-top: 20px;
+}
+
+.formBox {
+	background-color: #E1E1E1;
+	font-size: 30px;
+	padding-left: 20px;
+}
+
+input[type=text] {
+  width: 30%;
+  height:25px;
+}
+
+input[type=textbox] {
+	width:50%;
+	height:200px;
+}
+
+input[type=submit] {
+	width:17%;
+	height:50px;
+	font-size:20px;
+	background-color: #333;
+	color: white;
+}

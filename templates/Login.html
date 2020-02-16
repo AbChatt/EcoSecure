@@ -1,4 +1,4 @@
-<!DOCTYPE html>	
+<!DOCTYPE html>		
 <html>
 
 <head>
@@ -6,15 +6,26 @@
 	<link rel="stylesheet" type="text/css" href="static/StyleSheets/Login.css"/>
 </head>
 <body>
+	<div class = "navBarHeader">
+		<a href="Login.html">LOGIN</a>
+		<a href="Contact_us.html">CONTACT US</a>
+		<a href="About_us.html">ABOUT US</a>
+		<a href="Home.html">HOME</a>
+	</div>
+	<div class = "loginBox">
+		<h2>LOGIN<h2>
+	</div>
 	<div class ="container">
 		<div class="login_box">
 			<form class="userform" action = "signinform" method="post">
-				<span class="Login_title">Log In</span> <br><br><br><br><br>
+				<br>
+				<span class="Login_title">Log In</span> <br><br>
 				<input type="text" name="LoginID" class="UserInput" placeholder="UserName (or email ID)" required>
 				<input type="text" name="Password" class="UserInput" placeholder="Password" required>
 				<input type="submit" value="Submit" class="logBttn">
 			</form>
-			<a href="signup">Need a New Account? Click here</a>
+			<br><br>
+			<a class= "newlink" href="signup.html">Need a New Account? Click here</a>
 		</div>
 	</div>
 </body>

@@ -151,8 +151,9 @@ input[type=textbox] {
 }
 
 input[type=submit] {
-	width:17%;
-	height:50px;
-	font-size:20px;
-	background-color: #ACE993;
+  width:17%;
+  height:50px;
+  font-size:20px;
+  background-color: #333;
+  color: white;
 }

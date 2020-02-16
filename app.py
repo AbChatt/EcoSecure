@@ -13,16 +13,16 @@ db = SQLAlchemy(app)
 def root():
 	return render_template('Home.html')
 
-@app.route('/Home')
+@app.route('/Home.html')
 def Home_Page():
     # tells Flask to render the HTML page called Home.html
     return render_template('Home.html')
 
-@app.route('/About_us')
+@app.route('/About_us.html')
 def About_us_page():
 	return render_template('About_us.html')
 
-@app.route('/Login')
+@app.route('/Login.html')
 def Login_page():
 	return render_template('Login.html')
 
@@ -48,10 +48,16 @@ def signin_form():
     else:
         return render_template('index.html')
 
+<<<<<<< HEAD
 @app.route('/trustedvisitor', methods=['GET'])
 def trusted_visitor():
     if request.method == 'GET':
         return requests.get('url').content()
+=======
+@app.route("/signup.html")
+def signup_page():
+    return render_template('signup.html')
+>>>>>>> ee0da0e41fc585fe2699c1468f616ba0b34b2cb7
 
 @app.route('/signupform', methods=['GET', 'POST'])
 def signup_form():
