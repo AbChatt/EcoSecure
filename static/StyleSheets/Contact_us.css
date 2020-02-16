@@ -157,3 +157,23 @@ input[type=submit] {
 	background-color: #333;
 	color: white;
 }
+
+h5 {
+  border-top: solid;
+  border-color: #C7E6F9;
+  padding-top: 10px;
+  color: #C7E6F9;
+  text-align: center;
+  width: 92%;
+  font-size: 18px;
+}
+
+.copyright {
+  background-color: #171f2c;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  font-family:'Poppins', sans-serif;
+  margin:0px;
+}

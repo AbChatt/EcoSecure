@@ -4,7 +4,6 @@ body {
   padding:0px; 
 }
 
-
 .intro p{
   width: 50%;
 }
@@ -57,7 +56,6 @@ body {
 
 }
 
-
 .intro1 h1{
   flex-wrap: wrap;
   display: flex;
@@ -107,7 +105,6 @@ body {
   padding-left: 50px;
   font-family:'Poppins', sans-serif;
   margin:0px;
-  position: relative;
 }
 
 .Footer a {
@@ -154,16 +151,15 @@ body {
   margin-left: 40px;
 }
 
-
-
 h4{
-  position: absolute;
   bottom: 0;
   border-top: solid;
-  border-color: darkblue;
+  border-color: #C7E6F9;
   padding-top: 10px;
-  color: white;
+  color: #C7E6F9;
   text-align: center;
+  width: 92%;
+  font-size: 18px;
 }
 
 ul {
@@ -221,4 +217,14 @@ ul {
 
 .Footer h1{
   color: white;
+}
+
+.copyright {
+  background-color: #171f2c;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  font-family:'Poppins', sans-serif;
+  margin:0px;
 }
