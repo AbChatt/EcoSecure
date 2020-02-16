@@ -75,14 +75,3 @@ h1 {
   font-size: 40px;
   padding: 0px 0px 5px 16px;
 }
-
-h4{
-  position: absolute;
-  bottom: 0;
-  border-top: solid;
-  border-color: #C7E6F9;
-  padding-top: 10px;
-  color: #C7E6F9;
-  text-align: center;
-  width: 92%;
-}
