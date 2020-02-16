@@ -6,15 +6,18 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="static/StyleSheets/UserInterface.css">
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 <body class="w3-light-grey">
 
 <!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right">Logo</span>
+<div class = "navBarHeader">
+    <a href="Login.html">LOGIN</a>
+    <a href="Contact_us.html">CONTACT US</a>
+    <a href="About_us.html">ABOUT US</a>
+    <a href="Home.html">HOME</a>
 </div>
 
 <!-- Sidebar/menu -->
@@ -172,15 +175,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <h5>Recent Activites</h5>
     <ul class="w3-ul w3-card-4 w3-white">
       <li class="w3-padding-16">
-        <img src="static/Pictures/PitureA.jpeg" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="static/Pictures/personA.jpg" class="w3-left w3-circle w3-margin-right" style="width:35px">
         <span class="w3-xlarge">Mike</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="static/Pictures/PitureB.jpeg" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="static/Pictures/personB.jpg" class="w3-left w3-circle w3-margin-right" style="width:35px">
         <span class="w3-xlarge">Sid - Trusted</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="/w3images/avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="static/Pictures/woman.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
         <span class="w3-xlarge">Jane</span><br>
       </li>
     </ul>
@@ -188,29 +191,51 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <hr>
 
   <div class="w3-container">
-    <h5>Recent Comments</h5>
+    <h5>Recent Autorizations</h5>
     <div class="w3-row">
       <div class="w3-col m2 text-center">
-        <img class="w3-circle" src="/w3images/avatar3.png" style="width:96px;height:96px">
+        <img class="w3-circle" src="static/Photos/Shruti.jpg" style="width:96px;height:96px">
       </div>
       <div class="w3-col m10 w3-container">
-        <h4>John <span class="w3-opacity w3-medium">Sep 29, 2014, 9:12 PM</span></h4>
-        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+        <h4>Sid <span class="w3-opacity w3-medium">Sep 29, 2014, 3:12 PM</span></h4>
+        <p>Dog Walker (Lydia) arrived to take Sid on a walk. Autorized entry to home.</p><br>
       </div>
     </div>
 
     <div class="w3-row">
       <div class="w3-col m2 text-center">
-        <img class="w3-circle" src="/w3images/avatar1.png" style="width:96px;height:96px">
+        <img class="w3-circle" src="static/Photos/Abby.jpg" style="width:96px;height:96px">
       </div>
       <div class="w3-col m10 w3-container">
-        <h4>Bo <span class="w3-opacity w3-medium">Sep 28, 2014, 10:15 PM</span></h4>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+        <h4>Sid <span class="w3-opacity w3-medium">Sep 28, 2014, 10:15 PM</span></h4>
+        <p>Security System activated until home owner wakes up in the morning.</p><br>
       </div>
     </div>
   </div>
   <br>
   <!-- Footer -->
+  <div class = "Footer">
+    <div class = 'part1'>
+      <h1>Get in Touch</h1>
+      <p class = "phoneNumber">437-981-1976</p>
+      <br>
+      <br>
+      <p class = "footerPara">1265 Military Trail<br><br>Scarborough<br><br>ON M1C 1A4</p>
+    </div>
+    <div class = 'part2'>
+      <h1>Quick Links</h1>
+      <ul class = "ulo">
+        <li><a href="Home.html">Home</a></li>
+        <br>
+        <li><a href="About_us.html">About Us</a></li>
+        <br>
+        <li><a href="Contact_us.html">Contact Us</a></li>
+        <br>
+        <li><a href="Login.html">Login</a></li>
+        <br>
+      </ul>
+    </div>
+  </div>
 
   <!-- End page content -->
 </div>
