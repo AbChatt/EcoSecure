@@ -41,10 +41,9 @@ face_locations = []
 face_encodings = []
 face_names = []
 process_this_frame = True
-tab_open = False
-unknown_tab_open = False
 count = 0
 count_unknown = 0
+img_item = "unknown.jpg"
 
 #cap = cv2.VideoCapture(0)
 
@@ -82,11 +81,10 @@ while True:
             
                 r = requests.get('http://127.0.0.1:5000/trustedvisitor')   # sends a GET request to the web dashboard
 
-                if r.status_code == 200 and not tab_open:
+                if r.status_code == 200:
                     if count == 5:
-                        tab_open = webbrowser.open('http://127.0.0.1:5000/trustedvisitor', new=2)
+                        webbrowser.open('http://127.0.0.1:5000/trustedvisitor', new=2)
                         count = 0
-
                 
             # Or instead, use the known face with the smallest distance to the new face
             # face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
@@ -100,9 +98,11 @@ while True:
                 count_unknown += 1
                 if count_unknown == 5:
                     s = requests.get('http://127.0.0.1:5000/unknownvisitor')
-                    if s.status_code == 200 and not unknown_tab_open:
-                        unknown_tab_open = webbrowser.open('http://127.0.0.1:5000/unknownvisitor', new=2)
+                    if s.status_code == 200:
+                        webbrowser.open('http://127.0.0.1:5000/unknownvisitor', new=2)
                         count_unknown = 0
+
+                        cv2.
 
     process_this_frame = not process_this_frame
 
