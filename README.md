@@ -31,7 +31,7 @@ In addition to the above, you will need Python (v3.6.8), HTML5 and CSS3. This ha
 ## Examples
 Some sample screenshots of functionality, the website would provide are shown below
 
-![Screenshots](screenshots/all mobile screenshots.png)
+[Screenshots](screenshots/all mobile screenshots.png)
 
 ## Status
 As of February 2020 (last commit was the 16th), the project is active
